@@ -15,7 +15,8 @@ These steps are based on [the official documentation from Hashicorp](https://dev
 ## Create on Oauth Client ID and Secret for the IAP configuration of the load balancer
 1. Go to the [Credentials Page](https://console.cloud.google.com/apis/credentials)
 2. Click on `+ Create Credentials` and select "Oauth Client ID", then fill in the information.
-3. **Make sure that Authorized Redirect URIs contains the following** : `https://iap.googleapis.com/v1/oauth/clientIds/<your-oauth-client-id>:handleRedirect`. You might need to save your new oauth credentials and modify it again to be able to use the id
+3. You may have to fill the OAuth consent screen first, and for that you have to ask Guillaume to do it because he has access to the internal email list.
+4. **Make sure that Authorized Redirect URIs contains the following** : `https://iap.googleapis.com/v1/oauth/clientIds/<your-oauth-client-id>:handleRedirect`. You might need to save your new oauth credentials and modify it again to be able to use the id
 
 
 ## (Optional) Prepare an image on artifacts repository 
